@@ -9,7 +9,12 @@ import os
 
 MAX_LEN = 120
 
-LINE = "Rack 4 is haunted. Do not reboot it \u2014 the ghost fixed the outage and now charges by the scream."
+LINE_PARTS = (
+    "Rack 4 is haunted. Do not reboot it \u2014 ",
+    "the ghost fixed the outage and now charges by the scream.",
+)
+
+LINE = "".join(LINE_PARTS)
 
 
 def main() -> None:
